@@ -12,5 +12,15 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
+});
+
+
+Route::get('/enterprise', function () {
+    return view('homeEnterprise');
+});
+
+
+Route::get('/agent', function () {
+    return view('homeAgent');
 });
